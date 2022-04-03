@@ -1,0 +1,100 @@
+{
+    "root": true,
+	"env": {
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "airbnb-base",
+        "airbnb-typescript/base",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "./tsconfig.json"
+    },
+	
+    "plugins": [
+        "@typescript-eslint",
+        "import",
+        "prettier"
+    ],
+    "rules": {
+        "prettier/prettier": "error",
+        "import/prefer-default-export": "off",
+        "import/no-default-export": "error",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/no-use-before-define": [
+            "error",
+            {
+                "functions": false,
+                "classes": true,
+                "variables": true,
+                "typedefs": true
+            }
+        ],
+        "import/no-extraneous-dependencies": "off",
+		"camelcase": "off",
+		"class-methods-use-this": "off",
+		"consistent-return": "off",
+		"default-case": "off",
+		"default-param-last": "off",
+		"func-names": "off",
+		"global-require": "off",
+		"import/named": "off",
+		"import/no-cycle": "off",
+		"import/no-import-module-exports": "off",
+		"import/no-mutable-exports": "off",
+		"import/no-named-as-default": "off",
+		"import/no-named-as-default-member": "off",
+		"max-classes-per-file": "off",
+		"no-async-promise-executor": "off",
+		"no-await-in-loop": "warn",
+		"no-bitwise": "off",
+		"no-case-declarations": "off",
+		"no-cond-assign": "off",
+		"no-constructor-return": "off",
+		"no-continue": "off",
+		"no-debugger": "warn",
+		"no-new": "off",
+		"no-new-func": "off",
+		"no-new-object": "off",
+		"no-param-reassign": "off",
+		"no-plusplus": "off",
+		"no-promise-executor-return": "off",
+		"no-prototype-builtins": "off",
+		"no-restricted-exports": "off",
+		"no-restricted-globals": "off",
+		"no-restricted-syntax": "off",
+		"no-shadow": "off",
+		"no-template-curly-in-string": "off",
+		"no-undef": "warn",
+		"no-underscore-dangle": "off",
+		"no-unsafe-optional-chaining": "off",
+		"no-unused-expressions": "off",
+		"no-useless-concat": "off",
+		"no-useless-escape": "off",
+		"one-var": "off",
+		"prefer-destructuring": "off",
+		"prefer-promise-reject-errors": "off",
+		"prefer-regex-literals": "off",
+		"prefer-spread": "off",
+		"radix": "off",
+		"no-console": "off",
+		"no-use-before-define": [
+			"error",
+			{
+				"functions": false
+			}
+		],
+		"react/no-array-index-key": "off"
+    },
+    "settings": {
+        "import/resolver": {
+            "typescript": {
+                "alwaysTryTypes": true,
+                "project": "./tsconfig.json"
+            }
+        }
+    }
+}
